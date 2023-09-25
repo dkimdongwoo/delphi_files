@@ -1,0 +1,264 @@
+object Messenger: TMessenger
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Messenger'
+  ClientHeight = 500
+  ClientWidth = 500
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object connectBtn: TButton
+    Position.X = 412.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 2
+    Text = #50672#44208
+    OnClick = connectBtnClick
+  end
+  object roomEdt: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    MaxLength = 30
+    Text = '('#48169#51060#47492')'
+    TextSettings.Font.Family = 'Agency FB'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000002000000}
+    ImeMode = imHanguel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object dconnectBtn: TButton
+    Position.X = 412.000000000000000000
+    Position.Y = 38.000000000000000000
+    TabOrder = 4
+    Text = #54644#51228
+    OnClick = dconnectBtnClick
+  end
+  object chatMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    ShowScrollBars = False
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 68.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 375.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 480.000000000000000000
+    Viewport.Height = 371.000000000000000000
+  end
+  object messageEdt: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    ImeMode = imHanguel
+    Position.X = 8.000000000000000000
+    Position.Y = 451.000000000000000000
+    Size.Width = 428.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    OnKeyDown = messageEdtKeyDown
+  end
+  object sendBtn: TButton
+    Position.X = 444.000000000000000000
+    Position.Y = 451.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = #51204#49569
+    OnClick = sendBtnClick
+  end
+  object nameEdt: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    MaxLength = 20
+    Text = '('#51060#47492')'
+    TextSettings.Font.Family = 'Agency FB'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000002000000}
+    ImeMode = imHanguel
+    Position.X = 233.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 171.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+    OnChange = nameEdtChange
+  end
+  object passwordPnl: TPanel
+    Size.Width = 500.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 11
+    object passwordInputEdt: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Password = True
+      MaxLength = 20
+      TextSettings.Font.Family = 'Agency FB'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000002000000}
+      ImeMode = imAlpha
+      Position.X = 136.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [FontColor]
+      OnKeyDown = passwordInputEdtKeyDown
+    end
+    object usernameLb: TLabel
+      StyledSettings = [FontColor]
+      Position.X = 136.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Agency FB'
+      TextSettings.Font.Size = 48.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000002000000}
+      TextSettings.HorzAlign = Center
+      TabOrder = 1
+    end
+  end
+  object banePnl: TPanel
+    Size.Width = 500.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 12
+    object banLb: TLabel
+      Align = Center
+      StyledSettings = []
+      Size.Width = 433.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Agency FB'
+      TextSettings.Font.Size = 60.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000002000000}
+      TextSettings.FontColor = claCrimson
+      TextSettings.HorzAlign = Center
+      Text = #44053#53748#46104#50632#49845#45768#45796
+      TabOrder = 0
+    end
+    object exitBtn: TButton
+      StyledSettings = [FontColor]
+      Position.X = 152.000000000000000000
+      Position.Y = 346.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 97.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #45208#44032#44592
+      TextSettings.Font.Family = 'Agency FB'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000002000000}
+      OnClick = exitBtnClick
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 64
+  end
+  object Panel1: TPanel
+    Size.Width = 500.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 16
+  end
+  object sgcWebSocketClient1: TsgcWebSocketClient
+    Port = 80
+    ConnectTimeout = 0
+    ReadTimeout = -1
+    WriteTimeout = 0
+    TLS = False
+    Proxy.Enabled = False
+    Proxy.Port = 8080
+    Proxy.ProxyType = pxyHTTP
+    HeartBeat.Enabled = False
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    IPVersion = Id_IPv4
+    Authentication.Enabled = False
+    Authentication.URL.Enabled = True
+    Authentication.Session.Enabled = False
+    Authentication.Basic.Enabled = False
+    Authentication.Token.Enabled = False
+    Authentication.Token.AuthName = 'Bearer'
+    Extensions.DeflateFrame.Enabled = False
+    Extensions.DeflateFrame.WindowBits = 15
+    Extensions.PerMessage_Deflate.Enabled = False
+    Extensions.PerMessage_Deflate.ClientMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ClientNoContextTakeOver = False
+    Extensions.PerMessage_Deflate.MemLevel = 9
+    Extensions.PerMessage_Deflate.ServerMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ServerNoContextTakeOver = False
+    Options.CleanDisconnect = False
+    Options.FragmentedMessages = frgOnlyBuffer
+    Options.Parameters = '/'
+    Options.RaiseDisconnectExceptions = True
+    Options.ValidateUTF8 = False
+    Specifications.Drafts.Hixie76 = False
+    Specifications.RFC6455 = True
+    NotifyEvents = neAsynchronous
+    LogFile.Enabled = False
+    QueueOptions.Binary.Level = qmNone
+    QueueOptions.Ping.Level = qmNone
+    QueueOptions.Text.Level = qmNone
+    WatchDog.Attempts = 0
+    WatchDog.Enabled = False
+    WatchDog.Interval = 10
+    Throttle.BitsPerSec = 0
+    Throttle.Enabled = False
+    LoadBalancer.Enabled = False
+    LoadBalancer.Port = 0
+    TLSOptions.VerifyCertificate = False
+    TLSOptions.VerifyDepth = 0
+    TLSOptions.Version = tlsUndefined
+    TLSOptions.IOHandler = iohOpenSSL
+    TLSOptions.OpenSSL_Options.APIVersion = oslAPI_1_0
+    TLSOptions.OpenSSL_Options.LibPath = oslpNone
+    TLSOptions.OpenSSL_Options.UnixSymLinks = oslsSymLinksDefault
+    TLSOptions.SChannel_Options.CertStoreName = scsnMY
+    TLSOptions.SChannel_Options.CertStorePath = scspStoreCurrentUser
+  end
+  object sgcWSPClient_MQTT1: TsgcWSPClient_MQTT
+    OnMQTTConnect = sgcWSPClient_MQTT1MQTTConnect
+    OnMQTTPublish = sgcWSPClient_MQTT1MQTTPublish
+    OnMQTTDisconnect = sgcWSPClient_MQTT1MQTTDisconnect
+    Client = sgcWebSocketClient1
+    Authentication.Enabled = False
+    HeartBeat.Enabled = True
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    LastWillTestament.Enabled = False
+    LastWillTestament.QoS = mtqsAtMostOnce
+    LastWillTestament.Retain = False
+    LastWillTestament.WillProperties.MessageExpiryInterval = 0
+    LastWillTestament.WillProperties.PayloadFormat = mqpfUnspecified
+    LastWillTestament.WillProperties.WillDelayInterval = 0
+    QoS.Level = mtqsAtMostOnce
+    QoS.Interval = 60
+    QoS.Timeout = 300
+    ConnectProperties.Enabled = False
+    ConnectProperties.MaximumPacketSize = 2147483647
+    ConnectProperties.ReceiveMaximum = 65535
+    ConnectProperties.RequestProblemInformation = True
+    ConnectProperties.RequestResponseInformation = False
+    ConnectProperties.SessionExpiryInterval = 0
+    ConnectProperties.TopicAliasMaximum = 0
+    MQTTVersion = mqtt311
+    Left = 32
+  end
+end

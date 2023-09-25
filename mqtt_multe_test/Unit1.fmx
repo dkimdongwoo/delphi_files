@@ -1,0 +1,190 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 548
+  ClientWidth = 372
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Text = 'qwer1/tem'
+    Position.X = 144.000000000000000000
+    Position.Y = 56.000000000000000000
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = 'qwer1/hum'
+    Position.X = 256.000000000000000000
+    Position.Y = 56.000000000000000000
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 297.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 117.000000000000000000
+    Viewport.Height = 293.000000000000000000
+  end
+  object ProgressBar1: TProgressBar
+    Max = 50.000000000000000000
+    Orientation = Horizontal
+    Position.X = 144.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ProgressBar2: TProgressBar
+    Orientation = Horizontal
+    Position.X = 256.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    TabOrder = 8
+  end
+  object Label2: TLabel
+    Position.X = 256.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    TabOrder = 7
+  end
+  object Button1: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 10
+    Text = #50672#44208
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 11
+    Text = #54644#51228
+    OnClick = Button2Click
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C4C6162656C315374796C653103090100
+          5450463007544C61796F757400095374796C654E616D65060C4C6162656C3153
+          74796C653105416C69676E070643656E7465720A53697A652E57696474680500
+          000000000000D205400B53697A652E4865696768740500000000000000E40440
+          1453697A652E506C6174666F726D44656661756C7408085461624F7264657202
+          000005545465787400095374796C654E616D6506047465787405416C69676E07
+          06436C69656E74064C6F636B6564090748697454657374080A53697A652E5769
+          6474680500000000000000D205400B53697A652E486569676874050000000000
+          0000E404401453697A652E506C6174666F726D44656661756C74080454657874
+          060454657874000000}
+      end>
+  end
+  object sgcWebSocketClient1: TsgcWebSocketClient
+    Port = 80
+    ConnectTimeout = 0
+    ReadTimeout = -1
+    WriteTimeout = 0
+    TLS = False
+    Proxy.Enabled = False
+    Proxy.Port = 8080
+    Proxy.ProxyType = pxyHTTP
+    HeartBeat.Enabled = False
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    IPVersion = Id_IPv4
+    Authentication.Enabled = False
+    Authentication.URL.Enabled = True
+    Authentication.Session.Enabled = False
+    Authentication.Basic.Enabled = False
+    Authentication.Token.Enabled = False
+    Authentication.Token.AuthName = 'Bearer'
+    Extensions.DeflateFrame.Enabled = False
+    Extensions.DeflateFrame.WindowBits = 15
+    Extensions.PerMessage_Deflate.Enabled = False
+    Extensions.PerMessage_Deflate.ClientMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ClientNoContextTakeOver = False
+    Extensions.PerMessage_Deflate.MemLevel = 9
+    Extensions.PerMessage_Deflate.ServerMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ServerNoContextTakeOver = False
+    Options.CleanDisconnect = False
+    Options.FragmentedMessages = frgOnlyBuffer
+    Options.Parameters = '/'
+    Options.RaiseDisconnectExceptions = True
+    Options.ValidateUTF8 = False
+    Specifications.Drafts.Hixie76 = False
+    Specifications.RFC6455 = True
+    NotifyEvents = neAsynchronous
+    LogFile.Enabled = False
+    QueueOptions.Binary.Level = qmNone
+    QueueOptions.Ping.Level = qmNone
+    QueueOptions.Text.Level = qmNone
+    WatchDog.Attempts = 0
+    WatchDog.Enabled = False
+    WatchDog.Interval = 10
+    Throttle.BitsPerSec = 0
+    Throttle.Enabled = False
+    LoadBalancer.Enabled = False
+    LoadBalancer.Port = 0
+    TLSOptions.VerifyCertificate = False
+    TLSOptions.VerifyDepth = 0
+    TLSOptions.Version = tlsUndefined
+    TLSOptions.IOHandler = iohOpenSSL
+    TLSOptions.OpenSSL_Options.APIVersion = oslAPI_1_0
+    TLSOptions.OpenSSL_Options.LibPath = oslpNone
+    TLSOptions.OpenSSL_Options.UnixSymLinks = oslsSymLinksDefault
+    TLSOptions.SChannel_Options.CertStoreName = scsnMY
+    TLSOptions.SChannel_Options.CertStorePath = scspStoreCurrentUser
+  end
+  object sgcWSPClient_MQTT1: TsgcWSPClient_MQTT
+    OnMQTTConnect = sgcWSPClient_MQTT1MQTTConnect
+    OnMQTTPublish = sgcWSPClient_MQTT1MQTTPublish
+    OnMQTTDisconnect = sgcWSPClient_MQTT1MQTTDisconnect
+    Client = sgcWebSocketClient1
+    Authentication.Enabled = False
+    HeartBeat.Enabled = True
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    LastWillTestament.Enabled = False
+    LastWillTestament.QoS = mtqsAtMostOnce
+    LastWillTestament.Retain = False
+    LastWillTestament.WillProperties.MessageExpiryInterval = 0
+    LastWillTestament.WillProperties.PayloadFormat = mqpfUnspecified
+    LastWillTestament.WillProperties.WillDelayInterval = 0
+    QoS.Level = mtqsAtMostOnce
+    QoS.Interval = 60
+    QoS.Timeout = 300
+    ConnectProperties.Enabled = False
+    ConnectProperties.MaximumPacketSize = 2147483647
+    ConnectProperties.ReceiveMaximum = 65535
+    ConnectProperties.RequestProblemInformation = True
+    ConnectProperties.RequestResponseInformation = False
+    ConnectProperties.SessionExpiryInterval = 0
+    ConnectProperties.TopicAliasMaximum = 0
+    MQTTVersion = mqtt311
+    Left = 32
+  end
+end

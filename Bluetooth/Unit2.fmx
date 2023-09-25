@@ -1,0 +1,190 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 556
+  ClientWidth = 511
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 32.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 93.000000000000000000
+    Viewport.Height = 221.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 144.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 93.000000000000000000
+    Viewport.Height = 221.000000000000000000
+  end
+  object Memo3: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 256.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 93.000000000000000000
+    Viewport.Height = 221.000000000000000000
+  end
+  object ProgressBar1: TProgressBar
+    Orientation = Horizontal
+    Position.X = 368.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 392.000000000000000000
+    Position.Y = 224.000000000000000000
+    TabOrder = 4
+    OnSwitch = Switch1Switch
+  end
+  object btnDispositivos: TButton
+    Position.X = 400.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 7
+    Text = 'btnDispositivos'
+    OnClick = btnDispositivosClick
+  end
+  object cbDispositivos: TComboBox
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+  end
+  object btnPair: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 9
+    Text = 'btnPair'
+    OnClick = btnPairClick
+  end
+  object btnUnPair: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 10
+    Text = 'btnUnPair'
+    OnClick = btnUnPairClick
+  end
+  object btnDispositivosPareados: TButton
+    Position.X = 400.000000000000000000
+    Position.Y = 88.000000000000000000
+    TabOrder = 11
+    Text = 'btnDispositivosPareados'
+    OnClick = btnDispositivosPareadosClick
+  end
+  object cbPareados: TComboBox
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+  end
+  object lblConexao: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'lblConexao'
+    TabOrder = 13
+  end
+  object btnConectar: TButton
+    Position.X = 400.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 14
+    Text = 'btnConectar'
+    OnClick = btnConectarClick
+  end
+  object edtTexto: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 136.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = edtTextoChange
+  end
+  object Label1: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    TabOrder = 16
+  end
+  object btnEnviar: TButton
+    Position.X = 400.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 17
+    Text = 'btnEnviar'
+    OnClick = btnEnviarClick
+  end
+  object edtRecebido: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    Position.X = 48.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Switch2: TSwitch
+    IsChecked = False
+    Position.X = 392.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 19
+  end
+  object Timer1: TTimer
+    Left = 416
+    Top = 336
+  end
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 256.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+  object Bluetooth1: TBluetooth
+    Enabled = True
+    OnDiscoveryEnd = Bluetooth1DiscoveryEnd
+    Left = 416
+    Top = 408
+  end
+end
