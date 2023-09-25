@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: res/drawable-normal-v4/splash_image.png
+SHA1-Digest: qAwLnyfyHHcslkuEdxIGCShMVq0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: oS4QueTys7tYHAW8pp68rOoCbHY=
+
+Name: res/drawable-xlarge-v4/splash_image.png
+SHA1-Digest: sVV4oDYZR+y5FUB8wA+tBGBx2s8=
+
+Name: res/drawable/splash_image_def.xml
+SHA1-Digest: KCXKgCNMlxLXtl6IOJL/Tg2jHy8=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: q6EY+Ktk1K6jiefm9VM4PBBJTLc=
+
+Name: lib/armeabi-v7a/libBluetoothRControl.so
+SHA1-Digest: QQDrLDbkK2nsqRqqw/D0gdPdpOM=
+
+Name: res/drawable-large-v4/splash_image.png
+SHA1-Digest: IbixaGr2BG6Kcdh858kW8qd4u6k=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: UXzb2LOwVL6jbauKJmbdIMh3Too=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: JZ6NbpxUVq/dUvG4dxIq8aNqd1U=
+
+Name: lib/armeabi-v7a/gdbserver
+SHA1-Digest: 57a1///5wfiTcaA+Op5QBZMyW9c=
+
+Name: res/drawable-small-v4/splash_image.png
+SHA1-Digest: GfS96HIv9nFVE4CuTzc2QiqXjdc=
+
+Name: lib/mips/libBluetoothRemoteControl.so
+SHA1-Digest: NOP7lzrbR3Lw8Z0di/aJ5vtFRU4=
+
+Name: resources.arsc
+SHA1-Digest: bEPi6Q2eCCPuaS28EzNDruFoaoQ=
+
+Name: classes.dex
+SHA1-Digest: q2DJIUNT1lvcI4Vca1XSIcrc26c=
+
+Name: lib/armeabi/libBluetoothRemoteControl.so
+SHA1-Digest: sAJyQC2BsF6Gm1yyEDSAXL9cp+g=
+
+Name: res/drawable-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: 5R9X/GvqfVfQ0xnawbr07wr/F8E=
+
+Name: res/drawable-ldpi-v4/ic_launcher.png
+SHA1-Digest: 8EOvrT/lLLtoIQlZFACQaTSyLak=
+

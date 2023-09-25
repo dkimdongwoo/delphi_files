@@ -1,0 +1,310 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 598
+  ClientWidth = 484
+  Fill.Color = claYellow
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 110.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout3D1: TLayout3D
+      Height = 4.000000000000000000
+      Width = 5.000000000000000000
+    end
+    object btnDispositivosPareados: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 380.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 99.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Pareados'
+      OnClick = btnDispositivosPareadosClick
+    end
+    object cbPareados: TComboBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 365.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Position.Y = 158.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnConectar: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 379.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Conectar'
+      OnClick = btnConectarClick
+    end
+    object lblConexao: TLabel
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Desconectado'
+      TabOrder = 1
+    end
+  end
+  object Layout3: TLayout
+    Align = Top
+    Position.Y = 254.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Switch1: TSwitch
+      Align = Right
+      IsChecked = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 430.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnSwitch = Switch1Switch
+    end
+    object edtRecebido: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 1
+      Position.X = 5.000000000000000000
+      Position.Y = 9.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout4: TLayout
+    Align = Top
+    Position.Y = 206.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object edtTexto: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Enviar:'
+      TabOrder = 1
+    end
+    object btnEnviar: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 380.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 99.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Enviar'
+      OnClick = btnEnviarClick
+    end
+  end
+  object Layout5: TLayout
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object cbDispositivos: TComboBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 346.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object btnDispositivos: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 361.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 118.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Dispositivos'
+      OnClick = btnDispositivosClick
+    end
+  end
+  object Layout6: TLayout
+    Align = Top
+    Position.Y = 60.000000000000000000
+    Size.Width = 484.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object btnPair: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 140.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Pair'
+      OnClick = btnPairClick
+    end
+    object btnUnPair: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 339.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 140.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'UnPair'
+      OnClick = btnUnPairClick
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 16.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 73.000000000000000000
+    Viewport.Height = 217.000000000000000000
+  end
+  object Switch2: TSwitch
+    IsChecked = False
+    Position.X = 392.000000000000000000
+    Position.Y = 336.000000000000000000
+    TabOrder = 9
+    OnSwitch = Switch2Switch
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 112.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Viewport.Width = 81.000000000000000000
+    Viewport.Height = 217.000000000000000000
+  end
+  object ProgressBar1: TProgressBar
+    Max = 1023.000000000000000000
+    Orientation = Horizontal
+    Position.X = 184.000000000000000000
+    Position.Y = 576.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 10.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Memo3: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 216.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Viewport.Width = 73.000000000000000000
+    Viewport.Height = 217.000000000000000000
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 392
+    Top = 400
+  end
+  object Bluetooth1: TBluetooth
+    Enabled = False
+    OnDiscoveryEnd = Bluetooth1DiscoveryEnd
+    Left = 376
+    Top = 488
+  end
+end

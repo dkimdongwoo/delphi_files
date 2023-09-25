@@ -1,0 +1,267 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = RDAngularGauge1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = RDAngularGauge2
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = RDAngularGauge3
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = RDAngularGauge4
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object RDAngularGauge1: TRDAngularGauge
+      Anchors = []
+      Position.X = 80.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ValueMax = 100.000000000000000000
+      ValueMin = -100.000000000000000000
+      Value = 50.000000000000000000
+      Thickness = 40.000000000000000000
+      RangeAngle = 140.000000000000000000
+      ColorRange = claLightgray
+      ColorValue = xFF00C1C1
+      ColorNeedle = claMidnightblue
+      ColorBackground = xFFEEEEEE
+      TextFont.Size = 18.000000000000000000
+      TextVisible = True
+      NeedleVisible = True
+      TypeInfo = True
+    end
+    object RDAngularGauge2: TRDAngularGauge
+      Anchors = []
+      Position.X = 400.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ValueMax = 100.000000000000000000
+      ValueMin = -100.000000000000000000
+      Value = 50.000000000000000000
+      Thickness = 40.000000000000000000
+      RangeAngle = 140.000000000000000000
+      ColorRange = claLightgray
+      ColorValue = xFF00C1C1
+      ColorNeedle = claMidnightblue
+      ColorBackground = xFFEEEEEE
+      TextFont.Size = 18.000000000000000000
+      TextVisible = True
+      NeedleVisible = True
+      TypeInfo = True
+    end
+    object RDAngularGauge3: TRDAngularGauge
+      Anchors = []
+      Position.X = 80.000000000000000000
+      Position.Y = 280.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      ValueMax = 100.000000000000000000
+      ValueMin = -100.000000000000000000
+      Value = 50.000000000000000000
+      Thickness = 40.000000000000000000
+      RangeAngle = 140.000000000000000000
+      ColorRange = claLightgray
+      ColorValue = xFF00C1C1
+      ColorNeedle = claMidnightblue
+      ColorBackground = xFFEEEEEE
+      TextFont.Size = 18.000000000000000000
+      TextVisible = True
+      NeedleVisible = True
+      TypeInfo = True
+    end
+    object RDAngularGauge4: TRDAngularGauge
+      Anchors = []
+      Position.X = 400.000000000000000000
+      Position.Y = 280.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      ValueMax = 100.000000000000000000
+      ValueMin = -100.000000000000000000
+      Value = 50.000000000000000000
+      Thickness = 40.000000000000000000
+      RangeAngle = 140.000000000000000000
+      ColorRange = claLightgray
+      ColorValue = xFF00C1C1
+      ColorNeedle = claMidnightblue
+      ColorBackground = xFFEEEEEE
+      TextFont.Size = 18.000000000000000000
+      TextVisible = True
+      NeedleVisible = True
+      TypeInfo = True
+    end
+  end
+  object btnConnect: TButton
+    Anchors = []
+    Position.X = 280.000000000000000000
+    Position.Y = 50.000000000000000000
+    TabOrder = 5
+    Text = #50672#44208
+    OnClick = btnConnectClick
+  end
+  object btnDconnect: TButton
+    Anchors = []
+    Position.X = 280.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 4
+    Text = #54644#51228
+    OnClick = btnDconnectClick
+  end
+  object btnPubSub: TButton
+    Anchors = []
+    Position.X = 280.000000000000000000
+    Position.Y = 146.000000000000000000
+    TabOrder = 3
+    Text = #49440#50616
+    OnClick = btnPubSubClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    ShowScrollBars = False
+    Anchors = []
+    Position.X = 256.000000000000000000
+    Position.Y = 246.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 211.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 125.000000000000000000
+    Viewport.Height = 207.000000000000000000
+  end
+  object sgcWebSocketClient1: TsgcWebSocketClient
+    Port = 80
+    ConnectTimeout = 0
+    ReadTimeout = -1
+    WriteTimeout = 0
+    TLS = False
+    Proxy.Enabled = False
+    Proxy.Port = 8080
+    Proxy.ProxyType = pxyHTTP
+    HeartBeat.Enabled = False
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    IPVersion = Id_IPv4
+    Authentication.Enabled = False
+    Authentication.URL.Enabled = True
+    Authentication.Session.Enabled = False
+    Authentication.Basic.Enabled = False
+    Authentication.Token.Enabled = False
+    Authentication.Token.AuthName = 'Bearer'
+    Extensions.DeflateFrame.Enabled = False
+    Extensions.DeflateFrame.WindowBits = 15
+    Extensions.PerMessage_Deflate.Enabled = False
+    Extensions.PerMessage_Deflate.ClientMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ClientNoContextTakeOver = False
+    Extensions.PerMessage_Deflate.MemLevel = 9
+    Extensions.PerMessage_Deflate.ServerMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ServerNoContextTakeOver = False
+    Options.CleanDisconnect = False
+    Options.FragmentedMessages = frgOnlyBuffer
+    Options.Parameters = '/'
+    Options.RaiseDisconnectExceptions = True
+    Options.ValidateUTF8 = False
+    Specifications.Drafts.Hixie76 = False
+    Specifications.RFC6455 = True
+    NotifyEvents = neAsynchronous
+    LogFile.Enabled = False
+    QueueOptions.Binary.Level = qmNone
+    QueueOptions.Ping.Level = qmNone
+    QueueOptions.Text.Level = qmNone
+    WatchDog.Attempts = 0
+    WatchDog.Enabled = False
+    WatchDog.Interval = 10
+    Throttle.BitsPerSec = 0
+    Throttle.Enabled = False
+    LoadBalancer.Enabled = False
+    LoadBalancer.Port = 0
+    TLSOptions.VerifyCertificate = False
+    TLSOptions.VerifyDepth = 0
+    TLSOptions.Version = tlsUndefined
+    TLSOptions.IOHandler = iohOpenSSL
+    TLSOptions.OpenSSL_Options.APIVersion = oslAPI_1_0
+    TLSOptions.OpenSSL_Options.LibPath = oslpNone
+    TLSOptions.OpenSSL_Options.UnixSymLinks = oslsSymLinksDefault
+    TLSOptions.SChannel_Options.CertStoreName = scsnMY
+    TLSOptions.SChannel_Options.CertStorePath = scspStoreCurrentUser
+  end
+  object sgcWSPClient_MQTT1: TsgcWSPClient_MQTT
+    OnMQTTConnect = sgcWSPClient_MQTT1MQTTConnect
+    OnMQTTPublish = sgcWSPClient_MQTT1MQTTPublish
+    OnMQTTDisconnect = sgcWSPClient_MQTT1MQTTDisconnect
+    Client = sgcWebSocketClient1
+    Authentication.Enabled = False
+    HeartBeat.Enabled = True
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    LastWillTestament.Enabled = False
+    LastWillTestament.QoS = mtqsAtMostOnce
+    LastWillTestament.Retain = False
+    LastWillTestament.WillProperties.MessageExpiryInterval = 0
+    LastWillTestament.WillProperties.PayloadFormat = mqpfUnspecified
+    LastWillTestament.WillProperties.WillDelayInterval = 0
+    QoS.Level = mtqsAtMostOnce
+    QoS.Interval = 60
+    QoS.Timeout = 300
+    ConnectProperties.Enabled = False
+    ConnectProperties.MaximumPacketSize = 2147483647
+    ConnectProperties.ReceiveMaximum = 65535
+    ConnectProperties.RequestProblemInformation = True
+    ConnectProperties.RequestResponseInformation = False
+    ConnectProperties.SessionExpiryInterval = 0
+    ConnectProperties.TopicAliasMaximum = 0
+    MQTTVersion = mqtt311
+    Left = 32
+  end
+end

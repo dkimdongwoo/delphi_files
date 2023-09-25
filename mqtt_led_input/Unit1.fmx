@@ -1,0 +1,545 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 520
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rectborad: TRectangle
+    Align = Client
+    Fill.Color = xFF1BA9AB
+    Size.Width = 450.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      Align = Right
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 269.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 330.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ParentShowHint = False
+      ShowHint = False
+      Viewport.Width = 157.000000000000000000
+      Viewport.Height = 326.000000000000000000
+    end
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 269.000000000000000000
+      Size.Height = 350.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ColumnCollection = <
+        item
+          Value = 22.847092805248340000
+        end
+        item
+          Value = 37.325009281206000000
+        end
+        item
+          Value = 39.827897913545660000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Text1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = Rectangle3
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = Rectangle4
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = Rectangle5
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = Rectangle6
+          Row = 1
+        end
+        item
+          Column = 2
+          Control = Rectangle7
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = Rectangle8
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = Rectangle9
+          Row = 2
+        end
+        item
+          Column = 2
+          Control = Rectangle10
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = Rectangle11
+          Row = 3
+        end
+        item
+          Column = 1
+          Control = Rectangle12
+          Row = 3
+        end
+        item
+          Column = 2
+          Control = Rectangle13
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = Rectangle14
+          Row = 4
+        end
+        item
+          Column = 1
+          Control = Rectangle15
+          Row = 4
+        end
+        item
+          Column = 2
+          Control = Rectangle16
+          Row = 4
+        end>
+      RowCollection = <
+        item
+          Value = 35.675631041792140000
+        end
+        item
+          Value = 17.231947987385020000
+        end
+        item
+          Value = 17.508958407426850000
+        end
+        item
+          Value = 15.556820830751340000
+        end
+        item
+          Value = 14.026641732644650000
+        end
+        item
+        end>
+      object Text1: TText
+        Align = Client
+        Size.Width = 61.458679199218750000
+        Size.Height = 124.864707946777300000
+        Size.PlatformDefault = False
+        object Rectangle2: TRectangle
+          Align = Client
+          Fill.Color = xFF1BA9AB
+          Size.Width = 61.458679199218750000
+          Size.Height = 124.864707946777300000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 100.404266357421900000
+        Size.Height = 124.864707946777300000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnstart: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'start'
+          OnClick = btnstartClick
+        end
+      end
+      object Rectangle4: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 107.137054443359400000
+        Size.Height = 124.864707946777300000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnend: TButton
+          Align = Center
+          Margins.Right = 15.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'end'
+          OnClick = btnendClick
+        end
+      end
+      object Rectangle5: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 61.458679199218750000
+        Size.Height = 60.311820983886720000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rectA: TRectangle
+          Align = Center
+          Fill.Color = xFFD60303
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rectAA: TRectangle
+            Align = Client
+            Fill.Color = xFF02AC3E
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object Rectangle6: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 100.404266357421900000
+        Size.Height = 60.311820983886720000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnA0: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'on'
+          OnClick = btnA0Click
+        end
+      end
+      object Rectangle7: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 107.137054443359400000
+        Size.Height = 60.311820983886720000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnA1: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'off'
+          OnClick = btnA1Click
+        end
+      end
+      object Rectangle8: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 61.458679199218750000
+        Size.Height = 61.281356811523440000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rectB: TRectangle
+          Align = Center
+          Fill.Color = xFFD60303
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rectBB: TRectangle
+            Align = Client
+            Fill.Color = xFF02AC3E
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object Rectangle9: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 100.404266357421900000
+        Size.Height = 61.281356811523440000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnB0: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'on'
+          OnClick = btnB0Click
+        end
+      end
+      object Rectangle10: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 107.137054443359400000
+        Size.Height = 61.281356811523440000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnB1: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'off'
+          OnClick = btnB1Click
+        end
+      end
+      object Rectangle11: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 61.458679199218750000
+        Size.Height = 54.448883056640630000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rectC: TRectangle
+          Align = Center
+          Fill.Color = xFFD60303
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rectCC: TRectangle
+            Align = Client
+            Fill.Color = xFF02AC3E
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object Rectangle12: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 100.404266357421900000
+        Size.Height = 54.448883056640630000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnC0: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'on'
+          OnClick = btnC0Click
+        end
+      end
+      object Rectangle13: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 107.137054443359400000
+        Size.Height = 54.448883056640630000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnC1: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'off'
+          OnClick = btnC1Click
+        end
+      end
+      object Rectangle14: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 61.458679199218750000
+        Size.Height = 49.093231201171880000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rectD: TRectangle
+          Align = Center
+          Fill.Color = xFFD60303
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object rectDD: TRectangle
+            Align = Client
+            Fill.Color = xFF02AC3E
+            Size.Width = 30.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+      end
+      object Rectangle15: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 100.404266357421900000
+        Size.Height = 49.093231201171880000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnD0: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'on'
+          OnClick = btnD0Click
+        end
+      end
+      object Rectangle16: TRectangle
+        Align = Client
+        Fill.Color = xFF1BA9AB
+        Size.Width = 107.137054443359400000
+        Size.Height = 49.093231201171880000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object btnD1: TButton
+          Align = Center
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'off'
+          OnClick = btnD1Click
+        end
+      end
+    end
+    object Text2: TText
+      Align = MostBottom
+      Position.Y = 350.000000000000000000
+      Size.Width = 450.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object red: TBrushObject
+    StyleName = 'red'
+    Brush.Color = xFFD60303
+  end
+  object blue: TBrushObject
+    StyleName = 'blue'
+    Brush.Color = xFF0330D6
+  end
+  object Rectangle1: TRectangle
+    Align = MostLeft
+    Fill.Color = xFF727791
+    Size.Width = 70.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object blue2: TBrushObject
+    StyleName = 'blue2'
+    Brush.Color = xFF727791
+  end
+  object whitel: TBrushObject
+    StyleName = 'whitel'
+    Brush.Color = xFF1BA9AB
+  end
+  object sgcWebSocketClient1: TsgcWebSocketClient
+    Port = 80
+    ConnectTimeout = 0
+    ReadTimeout = -1
+    WriteTimeout = 0
+    TLS = False
+    Proxy.Enabled = False
+    Proxy.Port = 8080
+    Proxy.ProxyType = pxyHTTP
+    HeartBeat.Enabled = False
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    IPVersion = Id_IPv4
+    Authentication.Enabled = False
+    Authentication.URL.Enabled = True
+    Authentication.Session.Enabled = False
+    Authentication.Basic.Enabled = False
+    Authentication.Token.Enabled = False
+    Authentication.Token.AuthName = 'Bearer'
+    Extensions.DeflateFrame.Enabled = False
+    Extensions.DeflateFrame.WindowBits = 15
+    Extensions.PerMessage_Deflate.Enabled = False
+    Extensions.PerMessage_Deflate.ClientMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ClientNoContextTakeOver = False
+    Extensions.PerMessage_Deflate.MemLevel = 9
+    Extensions.PerMessage_Deflate.ServerMaxWindowBits = 15
+    Extensions.PerMessage_Deflate.ServerNoContextTakeOver = False
+    Options.CleanDisconnect = False
+    Options.FragmentedMessages = frgOnlyBuffer
+    Options.Parameters = '/'
+    Options.RaiseDisconnectExceptions = True
+    Options.ValidateUTF8 = False
+    Specifications.Drafts.Hixie76 = False
+    Specifications.RFC6455 = True
+    NotifyEvents = neAsynchronous
+    LogFile.Enabled = False
+    QueueOptions.Binary.Level = qmNone
+    QueueOptions.Ping.Level = qmNone
+    QueueOptions.Text.Level = qmNone
+    WatchDog.Attempts = 0
+    WatchDog.Enabled = False
+    WatchDog.Interval = 10
+    Throttle.BitsPerSec = 0
+    Throttle.Enabled = False
+    LoadBalancer.Enabled = False
+    LoadBalancer.Port = 0
+    TLSOptions.VerifyCertificate = False
+    TLSOptions.VerifyDepth = 0
+    TLSOptions.Version = tlsUndefined
+    TLSOptions.IOHandler = iohOpenSSL
+    TLSOptions.OpenSSL_Options.APIVersion = oslAPI_1_0
+    TLSOptions.OpenSSL_Options.LibPath = oslpNone
+    TLSOptions.OpenSSL_Options.UnixSymLinks = oslsSymLinksDefault
+    TLSOptions.SChannel_Options.CertStoreName = scsnMY
+    TLSOptions.SChannel_Options.CertStorePath = scspStoreCurrentUser
+    Left = 72
+  end
+  object sgcWSPClient_MQTT1: TsgcWSPClient_MQTT
+    OnMQTTConnect = sgcWSPClient_MQTT1MQTTConnect
+    OnMQTTPublish = sgcWSPClient_MQTT1MQTTPublish
+    OnMQTTDisconnect = sgcWSPClient_MQTT1MQTTDisconnect
+    Client = sgcWebSocketClient1
+    Authentication.Enabled = False
+    HeartBeat.Enabled = True
+    HeartBeat.Interval = 300
+    HeartBeat.Timeout = 0
+    LastWillTestament.Enabled = False
+    LastWillTestament.QoS = mtqsAtMostOnce
+    LastWillTestament.Retain = False
+    LastWillTestament.WillProperties.MessageExpiryInterval = 0
+    LastWillTestament.WillProperties.PayloadFormat = mqpfUnspecified
+    LastWillTestament.WillProperties.WillDelayInterval = 0
+    QoS.Level = mtqsAtMostOnce
+    QoS.Interval = 60
+    QoS.Timeout = 300
+    ConnectProperties.Enabled = False
+    ConnectProperties.MaximumPacketSize = 2147483647
+    ConnectProperties.ReceiveMaximum = 65535
+    ConnectProperties.RequestProblemInformation = True
+    ConnectProperties.RequestResponseInformation = False
+    ConnectProperties.SessionExpiryInterval = 0
+    ConnectProperties.TopicAliasMaximum = 0
+    MQTTVersion = mqtt311
+    Left = 104
+  end
+end

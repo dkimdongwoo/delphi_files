@@ -1,0 +1,12 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 376
+  ClientWidth = 248
+  DesignerMasterStyle = 3
+  inherited Memo1: TMemo
+    Viewport.Width = 121.000000000000000000
+    Viewport.Height = 297.000000000000000000
+  end
+  inherited ProgressBar1: TProgressBar
+    Size.Height = 10.000000000000000000
+  end
+end
